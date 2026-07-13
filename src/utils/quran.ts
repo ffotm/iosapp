@@ -22,10 +22,7 @@ export interface Surah extends SurahSummary {
 
 const data = quranData as unknown as { surahs: Surah[] };
 
-// Text is the Tanzil Project's Uthmani minimal script (Arabic only - no
-// translation is bundled, so this works fully offline with a modest ~2MB
-// asset). A translation layer could be added later as a separate JSON file
-// keyed by surah/ayah id if needed.
+/
 export function getAllSurahs(): SurahSummary[] {
   return data.surahs.map(({ ayat, ...summary }) => summary);
 }
