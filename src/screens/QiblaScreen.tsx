@@ -59,7 +59,7 @@ export default function QiblaScreen() {
       useNativeDriver: true,
     }).start();
 
-    // Angular difference, normalized to 0-180 regardless of direction of wraparound.
+    
     let diff = Math.abs(qiblaBearing - heading) % 360;
     if (diff > 180) diff = 360 - diff;
     const isAligned = diff <= ALIGNMENT_THRESHOLD_DEG;

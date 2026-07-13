@@ -10,7 +10,7 @@ export interface ThemeColors {
   text: string;
   subtext: string;
   primary: string;   // main accent (buttons, active states)
-  accent: string;    // secondary accent (gold highlight)
+  accent: string;    
   danger: string;
 }
 

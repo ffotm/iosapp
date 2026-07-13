@@ -10,10 +10,7 @@ function toDeg(rad: number): number {
   return (rad * 180) / Math.PI;
 }
 
-/**
- * Great-circle initial bearing from the user's location to the Kaaba,
- * in degrees clockwise from true north (0-360).
- */
+
 export function getQiblaBearing(latitude: number, longitude: number): number {
   const userLat = toRad(latitude);
   const userLon = toRad(longitude);

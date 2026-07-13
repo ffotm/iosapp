@@ -7,7 +7,7 @@ const HIJRI_MONTHS = [
 
 export interface HijriDate {
   day: number;
-  month: number; // 1-12
+  month: number; 
   monthName: string;
   year: number;
 }
