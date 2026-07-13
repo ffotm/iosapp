@@ -1,58 +1,59 @@
 {
-  "expo": {
-    "name": "Adhan & Qibla",
-    "slug": "adhan-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0f1720"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.fadia.adhanapp",
-      "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "We use your location to calculate accurate prayer times and the Qibla direction.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "We use your location in the background to keep prayer time notifications accurate as you travel.",
-        "UIBackgroundModes": [
-          "audio"
-        ]
-      }
-    },
-    "android": {
-      "package": "com.fadia.adhanapp",
-      "permissions": [
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION"
-      ]
-    },
-    "plugins": [
-      [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "We use your location to calculate accurate prayer times and the Qibla direction."
+    "expo": {
+        "name": "Adhan & Qibla",
+        "slug": "adhan-app",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "automatic",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#0f1720"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": false,
+            "bundleIdentifier": "com.fadia.adhanapp",
+            "infoPlist": {
+                "NSLocationWhenInUseUsageDescription": "We use your location to calculate accurate prayer times and the Qibla direction.",
+                "NSLocationAlwaysAndWhenInUseUsageDescription": "We use your location in the background to keep prayer time notifications accurate as you travel.",
+                "UIBackgroundModes": [
+                    "audio"
+                ]
+            }
+        },
+        "android": {
+            "package": "com.fadia.adhanapp",
+            "permissions": [
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_COARSE_LOCATION"
+            ]
+        },
+        "plugins": [
+            [
+                "expo-location",
+                {
+                    "locationAlwaysAndWhenInUsePermission": "We use your location to calculate accurate prayer times and the Qibla direction."
+                }
+            ],
+            [
+                "expo-notifications",
+                {
+                    "sounds": [
+                        "./assets/adhan-notification.wav"
+                    ]
+                }
+            ],
+            "expo-audio"
+        ],
+        "extra": {
+            "eas": {
+                "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+            }
         }
-      ],
-      [
-        "expo-notifications",
-        {
-          "sounds": [
-            "./assets/adhan-notification.wav"
-          ]
-        }
-      ],
-      "expo-audio"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
-      }
     }
-  }
 }
+//
