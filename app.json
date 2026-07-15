@@ -1,7 +1,7 @@
 {
     "expo": {
         "name": "Adhan & Qibla",
-        "slug": "adhan-app",
+        "slug": "app",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
@@ -23,13 +23,20 @@
                 "UIBackgroundModes": [
                     "audio"
                 ]
+            },
+            "config": {
+                "usesNonExemptEncryption": false
             }
         },
         "android": {
             "package": "com.fadia.adhanapp",
             "permissions": [
                 "ACCESS_FINE_LOCATION",
-                "ACCESS_COARSE_LOCATION"
+                "ACCESS_COARSE_LOCATION",
+                "android.permission.ACCESS_COARSE_LOCATION",
+                "android.permission.ACCESS_FINE_LOCATION",
+                "android.permission.RECORD_AUDIO",
+                "android.permission.MODIFY_AUDIO_SETTINGS"
             ]
         },
         "plugins": [
@@ -51,8 +58,9 @@
         ],
         "extra": {
             "eas": {
-                "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+                "projectId": "dc840866-ef74-4d7d-9c35-e3177c633f67"
             }
-        }
+        },
+        "owner": "fadddias-team"
     }
 }

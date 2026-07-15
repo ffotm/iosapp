@@ -22,7 +22,7 @@ export interface Surah extends SurahSummary {
 
 const data = quranData as unknown as { surahs: Surah[] };
 
-/
+//
 export function getAllSurahs(): SurahSummary[] {
   return data.surahs.map(({ ayat, ...summary }) => summary);
 }
